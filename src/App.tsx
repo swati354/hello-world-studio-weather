@@ -1,5 +1,5 @@
 import { AuthProvider, useAuth } from '@/hooks/useAuth';
-import { WeatherPage } from '@/components/WeatherPage';
+import { CalculatorPage } from '@/components/CalculatorPage';
 
 function SignInGate() {
   const { isAuthenticated, isLoading, login, error } = useAuth();
@@ -28,7 +28,7 @@ function SignInGate() {
     );
   }
 
-  return <WeatherPage />;
+  return <CalculatorPage />;
 }
 
 export function App() {
