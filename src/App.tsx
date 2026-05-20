@@ -1,4 +1,5 @@
 import { AuthProvider, useAuth } from '@/hooks/useAuth';
+import { WeatherPage } from '@/components/WeatherPage';
 
 function SignInGate() {
   const { isAuthenticated, isLoading, login, error } = useAuth();
@@ -27,14 +28,7 @@ function SignInGate() {
     );
   }
 
-  return (
-    <main className="flex min-h-screen items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900">Hello, World!</h1>
-        <p className="mt-3 text-lg text-gray-500">Welcome to your UiPath Coded Web App.</p>
-      </div>
-    </main>
-  );
+  return <WeatherPage />;
 }
 
 export function App() {
